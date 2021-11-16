@@ -1,2 +1,1 @@
-# tailwind-tuts
- 
+# Tailwind-tuts
