@@ -2,7 +2,7 @@
 @tailwind components;
 
 .btn {
-    @apply inline-block px-5 py-3 focus:outline-none focus:ring transition-all uppercase font-semibold tracking-wider rounded-lg;
+    @apply inline-block px-5 py-3 focus:outline-none focus:ring transition-all rounded-lg uppercase font-semibold tracking-wider;
 }
 
 .btn-primary {
