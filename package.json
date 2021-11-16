@@ -8,6 +8,7 @@
         "postcss-cli": "^9.0.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
+        "react-icons": "^4.3.1",
         "react-scripts": "4.0.3",
         "tailwindcss": "^2.2.19"
     },
@@ -26,6 +27,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "build-css": "postcss css/tailwind.css -o public/build/tailwind.css",
+        "watch-css": "postcss css/tailwind.css -o public/build/tailwind.css --watch",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },

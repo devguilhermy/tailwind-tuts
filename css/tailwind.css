@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+    @apply inline-block px-5 py-3 focus:outline-none focus:ring transition-all uppercase font-semibold tracking-wider rounded-lg;
+}
+
+.btn-primary {
+    @apply text-white bg-brand hover:bg-brand-lighter focus:bg-brand-lighter
+	active:bg-brand-darker;
+}
+
+.btn-secondary {
+    @apply text-white bg-gray-500 hover:bg-gray-400 focus:bg-gray-400
+	active:bg-gray-600;
+}
+
+.transition {
+    transition: all 0.5s ease-in-out;
+}
+
 @tailwind utilities;
