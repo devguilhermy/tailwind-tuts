@@ -5,7 +5,7 @@ export default function RentalList() {
     const [rentalList, setRentalList] = useState([
         {
             id: 1,
-            title: 'Nice modern Lake House',
+            title: 'Cozy Lake House',
             area: 420,
             bathroom_count: 5,
             bedroom_count: 6,
@@ -27,7 +27,7 @@ export default function RentalList() {
         },
         {
             id: 2,
-            title: 'Cottage in the mountains in cold Switzerland',
+            title: 'Cottage in the Swiss mountains',
             area: 129,
             bathroom_count: 3,
             bedroom_count: 4,
@@ -96,7 +96,7 @@ export default function RentalList() {
                 <h1 className="text-3xl font-semibold">Premium rentals</h1>
                 <p>List of curated places for you to relax and enjoy.</p>
             </div>
-            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {rentalList.map((rental) => {
                     return <RentalItem data={rental} key={rental.id} />;
                 })}
