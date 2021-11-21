@@ -91,7 +91,7 @@ export default function RentalList() {
     ]);
 
     return (
-        <div className="pt-16 sm:px-12 mx-auto">
+        <div className="pt-16 px-8 sm:px-12 mx-auto">
             <div className="text-center sm:text-left">
                 <h1 className="text-4xl font-semibold">Our rentals</h1>
                 <p>
