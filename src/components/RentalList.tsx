@@ -91,7 +91,7 @@ export default function RentalList() {
     ]);
 
     return (
-        <div className="pt-16 px-8 sm:px-12 mx-auto">
+        <div className="px-8 pt-16 mx-auto sm:px-12">
             <div className="text-center sm:text-left">
                 <h1 className="text-4xl font-semibold">Our rentals</h1>
                 <p>
@@ -99,7 +99,7 @@ export default function RentalList() {
                     of life.
                 </p>
             </div>
-            <div className="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+            <div className="grid grid-cols-1 gap-5 mt-4 md:grid-cols-2 lg:grid-cols-3 ">
                 {rentalList.map((rental) => {
                     return <RentalItem data={rental} key={rental.id} />;
                 })}

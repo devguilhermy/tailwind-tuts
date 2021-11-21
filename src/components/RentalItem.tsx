@@ -37,18 +37,18 @@ export default function RentalItem({ data }: RentalHouse) {
     }
 
     return (
-        <div className="w-full mx-auto max-w-md">
-            <div className="pb-2/3 relative">
-                <div className="pt-4 absolute h-full w-full">
+        <div className="w-full max-w-md mx-auto">
+            <div className="relative pb-2/3">
+                <div className="absolute w-full h-full pt-4">
                     <img
                         src={data.pictures[0]}
                         alt="House"
-                        className="h-full w-full object-cover object-center rounded-lg shadow-md"
+                        className="object-cover object-center w-full h-full rounded-lg shadow-md"
                     />
                 </div>
             </div>
             <div className="relative px-4 -mt-8">
-                <div className="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition ">
+                <div className="p-4 transition bg-white rounded-lg shadow-lg hover:shadow-xl ">
                     <a href={`/rental/${data.id}`} className="">
                         <p
                             className={`uppercase font-semibold text-sm text-gray-500 tracking-wide`}
@@ -70,26 +70,26 @@ export default function RentalItem({ data }: RentalHouse) {
 
                         <div className="flex items-center justify-between">
                             <div className="">
-                                <span className="font-medium text-lg text-gray-600">
+                                <span className="text-lg font-medium text-gray-600">
                                     $
                                 </span>
                                 <span className="text-2xl font-bold">
                                     {data.weekly_price}
                                 </span>
-                                <span className="ml-1 font-medium text-sm text-gray-600">
+                                <span className="ml-1 text-sm font-medium text-gray-600">
                                     {'/ wk'}
                                 </span>
-                                {/* <span className="ml-1 px-1 text-red-500  font-bold rounded-lg text-sm tracking-tighter uppercase">
+                                {/* <span className="px-1 ml-1 text-sm font-bold tracking-tighter text-red-500 uppercase rounded-lg">
                             12% Off
                         </span> */}
                             </div>
                             <div className="mt-2 leading-3 text-right">
-                                <span className="flex items-center justify-items-stretch text-xl text-brand-lighter font-bold">
+                                <span className="flex items-center text-xl font-bold justify-items-stretch text-brand-lighter">
                                     {stars}
                                     {/* <AiFillStar className="ml-auto" /> */}
                                     {/* <span>{data.rating}</span> */}
                                 </span>
-                                <span className="font-medium text-sm text-gray-600">
+                                <span className="text-sm font-medium text-gray-600">
                                     {data.review_count} reviews
                                 </span>
                             </div>
