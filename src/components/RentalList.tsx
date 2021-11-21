@@ -2,7 +2,7 @@ import RentalItem from './RentalItem';
 import { useState } from 'react';
 
 export default function RentalList() {
-    const [rentalList, setRentalList] = useState([
+    const [rentalList] = useState([
         {
             id: 1,
             title: 'Cozy Lake House',

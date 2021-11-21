@@ -1,6 +1,5 @@
 import housesImg from '../assets/images/houses2.jpg';
-import logoDark from '../assets/images/logo-dark.png';
-
+// import logoDark from '../assets/images/logo-dark.png';
 // import logoLight from './assets/images/logo-light.png';
 
 export default function Hero() {
