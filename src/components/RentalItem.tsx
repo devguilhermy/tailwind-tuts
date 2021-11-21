@@ -1,4 +1,5 @@
 import { AiFillStar } from 'react-icons/ai';
+import Badge from './Badge';
 
 interface RentalHouse {
     data: {
@@ -46,43 +47,23 @@ export default function RentalItem({ data }: RentalHouse) {
                     />
                 </div>
             </div>
-            <div className="relative px-4 -mt-6">
-                <div className="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
-                    <a href={`/rental/${data.id}`}>
-                        <div className="flex items-center truncate">
-                            <p>
-                                {data.is_new && (
-                                    <span className="inline-block px-2  py-0.5 bg-blue-300 text-brand uppercase text-sm font-semibold tracking-wide rounded-full">
-                                        New
-                                    </span>
-                                )}
-                                {data.is_premium && (
-                                    <span
-                                        className={`${
-                                            data.is_new && 'ml-1'
-                                        } inline-block px-2 py-0.5 bg-yellow-300 text-yellow-800 uppercase text-sm font-semibold tracking-wide rounded-full`}
-                                    >
-                                        Premium
-                                    </span>
-                                )}
-                            </p>
-                            <p
-                                className={`${
-                                    (data.is_new || data.is_premium) && 'ml-2'
-                                } uppercase font-semibold text-sm text-gray-500 tracking-wide`}
-                            >
-                                <span className="mr-1">
-                                    {data.bathroom_count} Baths
-                                </span>
-                                &bull;
-                                <span className="mx-1">
-                                    {data.bedroom_count} Beds
-                                </span>
-                                &bull;
-                                <span className="ml-1">{data.area} m²</span>
-                            </p>
-                        </div>
-                        <h1 className="mt-2 text-xl font-semibold leading-tight truncate">
+            <div className="relative px-4 -mt-8">
+                <div className="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition ">
+                    <a href={`/rental/${data.id}`} className="">
+                        <p
+                            className={`uppercase font-semibold text-sm text-gray-500 tracking-wide`}
+                        >
+                            <span className="mr-1">
+                                {data.bathroom_count} Baths
+                            </span>
+                            &bull;
+                            <span className="mx-1">
+                                {data.bedroom_count} Beds
+                            </span>
+                            &bull;
+                            <span className="ml-1">{data.area} m²</span>
+                        </p>
+                        <h1 className="mt-2 text-xl font-bold leading-tight truncate">
                             {data.title}
                         </h1>
                         <p className="mt-1 truncate">{data.location.address}</p>
@@ -112,6 +93,20 @@ export default function RentalItem({ data }: RentalHouse) {
                                     {data.review_count} reviews
                                 </span>
                             </div>
+                        </div>
+                        <div className="flex items-center truncate">
+                            <p>
+                                {data.is_new && (
+                                    <Badge label="New" color="blue" />
+                                )}
+                                {data.is_premium && (
+                                    <Badge
+                                        label="Premium"
+                                        color="yellow"
+                                        className={`${data.is_new && 'ml-1'}`}
+                                    />
+                                )}
+                            </p>
                         </div>
                     </a>
                 </div>

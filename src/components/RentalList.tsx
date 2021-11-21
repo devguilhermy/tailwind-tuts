@@ -91,12 +91,15 @@ export default function RentalList() {
     ]);
 
     return (
-        <div className="mt-4 p-8 mx-auto">
+        <div className="pt-16 sm:px-12 mx-auto">
             <div className="text-center sm:text-left">
-                <h1 className="text-3xl font-semibold">Premium rentals</h1>
-                <p>List of curated places for you to relax and enjoy.</p>
+                <h1 className="text-4xl font-semibold">Our rentals</h1>
+                <p>
+                    List of curated places for you to relax and enjoy the best
+                    of life.
+                </p>
             </div>
-            <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
                 {rentalList.map((rental) => {
                     return <RentalItem data={rental} key={rental.id} />;
                 })}
