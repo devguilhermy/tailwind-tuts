@@ -2,17 +2,15 @@
 @tailwind components;
 
 .btn {
-    @apply inline-block px-5 py-3 focus:outline-none focus:ring transition-all rounded-lg uppercase font-semibold tracking-wider;
+    @apply inline-block px-5 py-3 font-semibold tracking-wider uppercase transition-all rounded-lg focus:outline-none focus:ring;
 }
 
 .btn-primary {
-    @apply text-white bg-brand hover:bg-brand-lighter focus:bg-brand-lighter
-	active:bg-brand-darker;
+    @apply text-white bg-brand hover:bg-brand-lighter focus:bg-brand-lighter active:bg-brand-darker;
 }
 
 .btn-secondary {
-    @apply text-white bg-gray-500 hover:bg-gray-400 focus:bg-gray-400
-	active:bg-gray-600;
+    @apply text-white bg-gray-500 hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600;
 }
 
 .transition {
