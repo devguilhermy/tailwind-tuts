@@ -40,7 +40,7 @@ export default function Header() {
                 </a>
                 <a
                     href="/"
-                    className="block px-2 py-1 mt-6 transition rounded-lg hover:bg-gray-700 focus:bg-gray-700 sm:mt-0 sm:rounded-full"
+                    className="block px-2 py-1 mt-6 transition rounded-lg hover:bg-gray-700 focus:bg-gray-700 sm:mt-0 sm:ml-2 sm:rounded-full"
                 >
                     Add property
                 </a>

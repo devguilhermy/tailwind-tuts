@@ -20,8 +20,8 @@ export default function Hero() {
                         <span className="text-brand">Find it now!</span>
                     </h1>
                     <p className="mt-2 text-lg text-gray-500 sm:text-xl sm:mt-4">
-                        Homy helps you find your next nome, to rent or to be
-                        called your own!
+                        Homy helps you find your next nome to rent and be called
+                        your own!
                     </p>
                     <div className="mt-4 sm:mt-6">
                         <a
