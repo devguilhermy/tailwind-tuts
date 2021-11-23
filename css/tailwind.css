@@ -23,4 +23,9 @@
     justify-content: center;
 }
 
+.cover-center {
+    object-fit: cover;
+    object-position: center;
+}
+
 @tailwind utilities;
